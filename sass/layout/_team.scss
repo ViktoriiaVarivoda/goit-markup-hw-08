@@ -1,13 +1,15 @@
 .team__top-text {
-    /*margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.12;*/
     margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.12;
+    }
 }
 
 .team {
@@ -32,7 +34,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .team-card__text {
@@ -45,23 +47,25 @@
 }
 
 .team-list {
-    flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin: -15px;
     @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
                 display: flex;
                 align-items: center;
                 padding: 0;
                 margin: 0;
-                margin-bottom: -30px;
-                margin-right: -15px;
+                margin: -15px;
         }
 }
 
 .team-list__item {
-    margin-bottom: 30px;
+    margin: 15px;
     @media screen and (min-width: 768px) {
-    width: 270px;
-    margin-right: 15px;
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
     }
 }
 
