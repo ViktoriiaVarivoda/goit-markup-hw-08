@@ -47,7 +47,7 @@
 }
 
 .team-list {
-    margin: -15px;
+    margin-bottom: -30px;
     @media screen and (min-width: 768px) {
         flex-wrap: wrap;
                 display: flex;
@@ -59,7 +59,7 @@
 }
 
 .team-list__item {
-    margin: 15px;
+    margin-bottom: 30px;
     @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
     margin: 15px;
