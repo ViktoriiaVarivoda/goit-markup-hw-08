@@ -160,21 +160,6 @@ p {
   color: #000000;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
-.current::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  bottom: -1px;
-  background: var(--accent-color);
-  border-radius: 2px;
-}
-
 .connect__mailto,
 .connect__tel {
   font-weight: 500;
@@ -231,16 +216,21 @@ p {
   background-color: #ffffff;
   height: 100vh;
   width: 100vw;
-  padding-top: 48px;
-  padding-bottom: 48px;
 }
 
 .mob-menu .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.mob-menu-list {
+.mob-menu-list__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -248,17 +238,27 @@ p {
   color: var(--title-color);
 }
 
+.mob-menu-list__link:hover, .mob-menu-list__link:focus {
+  color: var(--accent-color);
+}
+
 .header-close-button {
-  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  padding-top: 21px;
   margin-left: auto;
   transition: background-color 250ms var(--animation);
 }
 
 .header-close-button:hover, .header-close-button:focus {
-  background-color: #0f76ca;
+  color: var(--accent-color);
+}
+
+.header-close-button:hover,
+.header-button__icon:focus {
+  color: #0f76ca;
 }
 
 .mob-menu-connect__tel {
@@ -288,8 +288,12 @@ p {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
   margin-top: 64px;
+  font-size: 4vmin;
+}
+
+.mob-menu-soc__link {
+  color: var(--accent-color);
 }
 
 /*
@@ -303,8 +307,36 @@ border: 1px solid rgba(33, 33, 33, 0.2);
     display: block;
 }
 */
+.mob-menu-connect__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-soc__item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .mob-menu-soc .mob-menu-soc__item:not(:last-child) {
-  margin-right: 20px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+/*
+.current {
+    color: var(--accent-color);
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: -1px;
+        background: var(--accent-color);
+        border-radius: 2px;
+    }
+}*/
+.no-scroll {
+  overflow: hidden;
 }
 
 .hero__title {
