@@ -6,25 +6,36 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--main-color);
+@media (min-width: 768px) {
+    margin-top: 60px
+};
 }
 
 .footer-form {
-    margin-left: auto;
+    // margin-left: auto;
 }
 
 .footer-form__input {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: 768px) {
+        display: block;
+        flex-wrap: wrap;
+            justify-content: center;
+}
 }
 
 .footer-form__email {
-    width: 358px;
+    // width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-    margin-right: 12px;
+    // margin-right: 12px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -56,6 +67,7 @@
     transition: background-color 250ms var(--animation);
     cursor: pointer;
     border: 0;
+    margin-top: 20px;
     &:hover,
         &:focus {
             background-color: #0f76ca;

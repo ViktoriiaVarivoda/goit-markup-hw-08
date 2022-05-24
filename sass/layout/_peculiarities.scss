@@ -56,6 +56,12 @@
     text-transform: uppercase;
     color: var(--title-color);
     text-align: center;
+    @media screen and (min-width: 768px) {
+        text-align: start;
+        }
+    @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
 }
 
 .peculiarities-list__text {
