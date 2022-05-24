@@ -14,12 +14,17 @@
 <body>
     
         <header class="header">
-            <div class="container header-nav">
+            <div class="container">
                 <a href="" class="logo link">Web<span class="logo-two logo-two--dark link">Studio</span></a>
+                <button type="button" class="header-open-button">
+                    <svg class="header-button__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
                 <nav class="navigation header__navigation">
                     <ul class="menu-list list">
                         <li class="menu-list__item"><a href="./index.html" class="menu-list__link link">Студия</a></li>
-                        <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link current link">Портфолио</a></li>
+                        <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link link current">Портфолио</a></li>
                         <li class="menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
                     </ul>
                 </nav>
@@ -36,10 +41,55 @@
                     </li>
                 </ul>
             </div>
+        
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu-top">
+                        <button type="button" class="header-close-button">
+                            <svg class="header-button__icon" width="40" height="40">
+                                <use href="./images/icons.svg#icon-close_40px"></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu-list list">
+                            <li class="mob-menu-list__item"><a href="./index.html"
+                                    class="mob-menu-list__link link">Студия</a></li>
+                            <li class="mob-menu-list__item"><a href="./portfolio.html"
+                                    class="mob-menu-list__link link current">Портфолио</a></li>
+                            <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link link">Контакты</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="mob-connect">
+                        <ul class="mob-menu-connect list">
+                            <li class="mob-menu-connect__item"><a href="tel:+380961111111" class="mob-menu-connect__tel link">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-menu-connect__item"><a href="mailto:info@devstudio.com"
+                                    class="mob-menu-connect__mailto link">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mob-menu-soc list">
+                            <li class="mob-menu-soc__item">
+                                <a href class="mob-menu-soc__link link">Instagram</a>
+                            </li>
+                            <li class="mob-menu-soc__item">
+                                <a href class="mob-menu-soc__link link">Twitter</a>
+                            </li>
+                            <li class="mob-menu-soc__item">
+                                <a href class="mob-menu-soc__link link">Facebook</a>
+                            </li>
+                            <li class="mob-menu-soc__item">
+                                <a href class="mob-menu-soc__link link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
     
 
-        <!--
+        
     <main>
 <section class="section-portfolio section">
     <div class="container">
@@ -52,7 +102,7 @@
           <li class="section-portfolio-item-nav list"><button type="button" class="section-portfolio-btn">Маркетинг</button></li>
       </ul>
 </div>
--->
+
 
 <div class="container">
    <h2 class="visually-hidden">Наши проекты</h2>
@@ -274,7 +324,7 @@
         </form>
     </div>
 </footer>
-    
+    -->
+<script src="./js/menu.js"></script>
 </body>
 </html>
--->

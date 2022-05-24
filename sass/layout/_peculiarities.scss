@@ -3,6 +3,7 @@
     @media screen and (min-width: 768px) {
             flex-wrap: wrap;
             display: flex;
+            align-items: center;
             padding: 0;
             margin: 0;
             margin: -15px;
@@ -55,7 +56,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
-    }
+    text-align: center;
+}
 
 .peculiarities-list__text {
     font-size: 14px;
