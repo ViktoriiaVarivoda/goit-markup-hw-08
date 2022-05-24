@@ -11,21 +11,23 @@
 }*/
 
 .section-portfolio-list-nav {
+    display: flex;
     flex-wrap: wrap;
+    margin: -8px;
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
     }
     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
     }
 }
 
+/*
 .section-portfolio-list-nav .section-portfolio-item-nav:not(:last-child) {
     margin-right: 8px;
-}
+}*/
 
 .section-portfolio-btn {
     border-radius: 4px;
@@ -52,11 +54,12 @@
     }
 }
 
+
 .section-portfolio-list{
+    padding: 0;
     margin-bottom: -30px;
     @media screen and (min-width: 768px){
     display: flex;
-    align-items: center;
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
@@ -81,6 +84,11 @@
     @media screen and (min-width: 1200px) {
     width: calc(100% / 3 - 30px);
     }
+}
+
+.section-portfolio-img {
+    flex-direction: column;
+    height: 100%;
 }
 
 .section-portfolio-top-wrap {
@@ -133,6 +141,7 @@
 }
 
 .cards {
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
