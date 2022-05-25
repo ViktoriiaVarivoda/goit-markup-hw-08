@@ -115,15 +115,17 @@
     padding-right: 55px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 124px;
-    margin-right: 124px;
-    margin-top: 30px;
+    margin: auto;
     cursor: pointer;
     transition: background-color 250ms var(--animation);
     &:hover,
         &:focus {
             background-color: #0f76ca;
         }
+    @media (min-width: 1200px) {
+    margin-left: 124px;
+    margin-right: 124px;
+    }
 }
 
 .modal-form__text {
@@ -168,8 +170,10 @@
     color: var(--header-color);
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
     @media (min-width: 1200px) {
     font-size: 14px;
+    margin-bottom: 31px;
     }
 }
 
