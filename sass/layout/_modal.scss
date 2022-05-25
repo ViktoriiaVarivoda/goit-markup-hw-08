@@ -12,7 +12,7 @@
 
 .modal {
     position: absolute;
-    width: 450px;
+    width: 100%;
     min-height: 609px;
     background: var(--main-color);
     border-radius: 4px;
@@ -20,6 +20,9 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 40px;
+@media (min-width: 480px) {
+        width: 450px;
+    }
 @media (min-width: 1200px) {
         width: 528px;
         min-height: 581px;

@@ -112,14 +112,18 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
+    cursor: pointer;
     transition: background-color 250ms var(--animation);
-    &:hover,
-    &:focus {
-        color: #0f76ca;
-    }
-        @media (min-width: 768px) {
+            @media (min-width: 768px) {
             display: none;
         }
+}
+
+.header-open-button:focus .header-button__icon {
+    fill: var(--accent-color);
+}
+.header-open-button:hover .header-button__icon {
+    fill: var(--accent-color);
 }
 
 .mob-menu {
@@ -162,13 +166,15 @@
     border: none;
     background-color: rgba(0, 0, 0, 0);
     margin-left: auto;
+    cursor: pointer;
     transition: background-color 250ms var(--animation);
-   
 }
 
-.header-button__icon:hover,
-.header-button__icon:focus{
-    color: #0f76ca;
+.header-close-button:focus .header-btn__icon {
+    fill: var(--accent-color);
+}
+.header-close-button:hover .header-btn__icon {
+    fill: var(--accent-color);
 }
 
 .mob-menu-connect__tel {

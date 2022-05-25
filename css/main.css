@@ -252,17 +252,22 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: auto;
+  cursor: pointer;
   transition: background-color 250ms var(--animation);
-}
-
-.header-open-button:hover, .header-open-button:focus {
-  color: #0f76ca;
 }
 
 @media (min-width: 768px) {
   .header-open-button {
     display: none;
   }
+}
+
+.header-open-button:focus .header-button__icon {
+  fill: var(--accent-color);
+}
+
+.header-open-button:hover .header-button__icon {
+  fill: var(--accent-color);
 }
 
 .mob-menu {
@@ -306,12 +311,16 @@ p {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   margin-left: auto;
+  cursor: pointer;
   transition: background-color 250ms var(--animation);
 }
 
-.header-button__icon:hover,
-.header-button__icon:focus {
-  color: #0f76ca;
+.header-close-button:focus .header-btn__icon {
+  fill: var(--accent-color);
+}
+
+.header-close-button:hover .header-btn__icon {
+  fill: var(--accent-color);
 }
 
 .mob-menu-connect__tel {
@@ -1231,12 +1240,18 @@ p {
 
 .modal {
   position: absolute;
-  width: 450px;
+  width: 100%;
   min-height: 609px;
   background: var(--main-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
+}
+
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media (min-width: 1200px) {
