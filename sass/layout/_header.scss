@@ -35,6 +35,10 @@
 .header__navigation {
     margin-left: 93px;
     display: none;
+    @media (min-width: 768px) {
+            display: block;
+            margin-left: 88px;
+        }
 }
 
 .logo-two--dark {
@@ -64,6 +68,9 @@
     /*display: flex;*/
     display: none;
     margin-left: auto;
+    @media (min-width: 768px) {
+            display: block;
+        }
 }
 
 .connect .connect__item:not(:last-child) {
@@ -87,6 +94,9 @@
     &:focus {
         background-color: #0f76ca;
     }
+        @media (min-width: 768px) {
+            display: none;
+        }
 }
 
 .mob-menu {

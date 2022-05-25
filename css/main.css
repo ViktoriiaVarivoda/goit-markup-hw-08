@@ -156,6 +156,13 @@ p {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .header__navigation {
+    display: block;
+    margin-left: 88px;
+  }
+}
+
 .logo-two--dark {
   color: #000000;
 }
@@ -185,6 +192,12 @@ p {
   margin-left: auto;
 }
 
+@media (min-width: 768px) {
+  .connect {
+    display: block;
+  }
+}
+
 .connect .connect__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -206,6 +219,12 @@ p {
 
 .header-open-button:hover, .header-open-button:focus {
   background-color: #0f76ca;
+}
+
+@media (min-width: 768px) {
+  .header-open-button {
+    display: none;
+  }
 }
 
 .mob-menu {
