@@ -6,19 +6,18 @@
     
     .container {
             // display: inline-flex;
-            align-items: baseline;
-            text-align: center;
+        align-items: baseline;
+        text-align: center;
             @media (min-width: 768px) {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
-}
- @media (min-width: 1200px){
-     text-align: left;
- }
+                    }
+            @media (min-width: 1200px){
+            text-align: left;
+            }
         }
-                            
-    }
+}
 
 .logo-two--light {
     color: var(--main-color);
@@ -27,20 +26,22 @@
 
 .footer-adress__text {
     padding-top: 20px;
-margin-bottom: 8px;
-font-style: normal;
+    margin-bottom: 8px;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-color);
-    @media (min-width: 1200px) {
-        margin-bottom: 9px;}
+        @media (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer-adress__contacts {
     margin-bottom: 8px;
-    @media (min-width: 1200px)
-    {margin-bottom: 9px;}
+        @media (min-width: 1200px){ 
+        margin-bottom: 9px;
+    }
 }
 
 .footer-adress__mailto {
@@ -88,9 +89,11 @@ font-style: normal;
         flex-wrap: wrap;
         justify-content: center;
         @media (min-width: 768px) {
-                margin-top: 0;}
+                margin-top: 0;
+            }
         @media (min-width: 1200px) {
-            justify-content: left;}
+            justify-content: left;
+        }
 }
 
 .footer-content-list__item + .footer-content-list__item {

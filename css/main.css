@@ -1073,13 +1073,6 @@ p {
   background-color: var(--main-color);
 }
 
-/*
-.section-portfolio-list-nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}*/
 .section-portfolio-list-nav {
   display: flex;
   flex-wrap: wrap;
@@ -1242,12 +1235,19 @@ p {
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background: var(--main-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__button {
@@ -1284,8 +1284,14 @@ p {
   margin-bottom: 12px;
 }
 
+@media (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.5;
+  }
+}
+
 .modal-form-input-wrap__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1297,6 +1303,12 @@ p {
 
 .modal-form-input-wrap__input:focus {
   border: 1px solid var(--accent-color);
+}
+
+@media (min-width: 1200px) {
+  .modal-form-input-wrap__input {
+    width: 448px;
+  }
 }
 
 .modal-form-input-wrap {
@@ -1356,7 +1368,7 @@ p {
 }
 
 .modal-form-textarea__textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1380,13 +1392,25 @@ p {
   border: 1px solid var(--accent-color);
 }
 
+@media (min-width: 1200px) {
+  .modal-form-textarea__textarea {
+    width: 448px;
+  }
+}
+
 .modal-form-checkbox__top-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--header-color);
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .modal-form-checkbox__top-text {
+    font-size: 14px;
+  }
 }
 
 .modal-form-checkbox__top-text span {

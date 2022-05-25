@@ -6,13 +6,13 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--main-color);
-@media (min-width: 768px) {
-    margin-top: 60px;
-}
- @media (min-width: 1200px) {
-     margin-top: 0;
-     display: flex;
-}
+        @media (min-width: 768px) {
+        margin-top: 60px;
+        }
+        @media (min-width: 1200px) {
+        margin-top: 0;
+        display: flex;
+        }
 }
 
 .footer-form {
@@ -25,18 +25,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @media (min-width: 768px) {
+        @media (min-width: 768px) {
         display: block;
         flex-wrap: wrap;
-            justify-content: center;
-}
- @media (min-width: 1200px) {
-     display: flex;
-}
+        justify-content: center;
+        }
+        @media (min-width: 1200px) {
+        display: flex;
+        }
 }
 
 .footer-form__email {
-        width: 450px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -52,10 +52,10 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    @media (min-width: 1200px) {
-            width: 358px;
-            margin-right: 12px;
-    }
+        @media (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+        }
 }
 
 .footer-form__btn {
@@ -83,14 +83,12 @@
         &:focus {
             background-color: #0f76ca;
         }
-@media (min-width: 768px) {
-                display: inline-flex;
-             text-align: center;}
-
-                         @media (min-width: 1200px) {
-                             margin-top: 0;
-                             
-}
+        @media (min-width: 768px) {
+        display: inline-flex;
+        text-align: center;}
+        @media (min-width: 1200px) {
+        margin-top: 0;
+        }
 }
 
 .footer-form__icon {

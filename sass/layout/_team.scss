@@ -50,22 +50,22 @@
     margin-bottom: -30px;
     @media screen and (min-width: 768px) {
         flex-wrap: wrap;
-                display: flex;
-                align-items: center;
-                padding: 0;
-                margin: 0;
-                margin: -15px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        margin: -15px;
         }
 }
 
 .team-list__item {
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
-    width: calc(100% / 2 - 30px);
-    margin: 15px;
+        width: calc(100% / 2 - 30px);
+        margin: 15px;
     }
     @media screen and (min-width: 1200px) {
-    width: calc(100% / 4 - 30px);
+        width: calc(100% / 4 - 30px);
     }
 }
 
