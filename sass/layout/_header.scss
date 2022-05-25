@@ -55,7 +55,6 @@
     letter-spacing: 0.02em;
     color: var(--header-color);
     display: flex;
-    justify-content: center;
     align-items: center;
     transition: color 250ms var(--animation);
     &:hover,
@@ -63,24 +62,48 @@
             color: var(--accent-color);
         }
                 @media (min-width: 768px) {
+                    margin-left: 84px;
                     font-size: 12px;
                     line-height: 1.17;
                     letter-spacing: 0.02em;
                 }
+                
+                @media (min-width: 1200px) {
+                        font-size: 14px;
+                        line-height: 1.14;
+                        display: flex;
+                        margin-left: 0;
             }
+        }
+
+.connect__mailto {
+    @media (min-width: 768px) {
+        margin-bottom: 10px;
+    }
+
+        @media (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+}
+
+.connect__tel {
+    @media (min-width: 1200px) {
+        margin-left: 30px;}}
 
 .connect {
-    /*display: flex;*/
     display: none;
     margin-left: auto;
     @media (min-width: 768px) {
             display: block;
         }
+@media (min-width: 1200px) {
+                        display: flex;
+                                            }
 }
 
-.connect .connect__item:not(:last-child) {
-    margin-right: 50px;
-}
+// .connect .connect__item:not(:last-child) {
+//     margin-right: 50px;
+// }
 
 .header__connect {
     margin-right: 10px;
