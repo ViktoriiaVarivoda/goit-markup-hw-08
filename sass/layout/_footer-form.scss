@@ -72,6 +72,9 @@
         &:focus {
             background-color: #0f76ca;
         }
+@media (min-width: 768px) {
+                display: inline-flex;
+             text-align: center;}
 }
 
 .footer-form__icon {
