@@ -681,6 +681,8 @@ p {
 }
 
 .team-list__item {
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
